@@ -1,4 +1,97 @@
-body{
-    background-color: rgba(0, 0, 0, 0.507);
-    color: white;
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    background-color: #F0F8FF;
+    font-family: sans-serif;
+    color: #fc0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Título principal */
+#subtitulo {
+    color: #ff0202;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* Formulário */
+#formulario1 {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 0 auto; /* Centraliza o formulário na página */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Estilos dos campos */
+.campo label {
+    color: #000000;
+    margin-bottom: 5px;
+    font-size: 1em;
+    text-align: left; /* Mantém o label alinhado à esquerda */
+    width: 100%; /* Garante que o label ocupe toda a largura disponível */
+}
+
+.campo input[type="text"],
+.campo input[type="email"] {
+    padding: 8px;
+    border: 1px solid #59429d;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 90%;
+}
+
+/* Estilos do botão */
+#VerificarBotao {
+    background: linear-gradient(135deg, #ff0000 0%, #9c1212 100%); /* Gradiente */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px; /* Bordas arredondadas */
+    cursor: pointer;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.3s, box-shadow 0.3s; /* Efeito suave */
+    margin-top: 20px;
+    width: auto; /* Ajusta o tamanho do botão automaticamente ao conteúdo */
+}
+
+/* Animação de hover */
+#VerificarBotao:hover {
+    transform: scale(1.05); /* Aumenta levemente o botão */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Intensifica a sombra */
+    background: linear-gradient(135deg, #ff0000 0%, #9c1212 100%); /* Mantém o gradiente */
+}
+
+/* Centralizando tudo na página */
+.div {
+    text-align: center;
+}
+
+#contato_h1{
+    color: #ff0000;
+    text-align: center;
+}
+
+#contato_h2{
+    color: #a52222;
 }

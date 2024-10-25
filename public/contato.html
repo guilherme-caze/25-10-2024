@@ -4,24 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="/css/style.css"> <!-- Puxando o CSS -->
 </head>
 <body>
    
-    <script>
-        function InformacoesFormulario(){
-            const Informacoes = {}
-            window.location.search.substr(1).split("&").forEach(function(item) {
-                const parts = item.split("=");
-                params[decodeURIComponent(parts[0])] = decodeURIComponent(parts[1]);
-            });
-            return Informacoes;
-        }
-
-        const Informacoes = getQueryParams();
-        document.getElementById("NomeTela").textContent = "Nome: " + Informacoes.nome;
-        document.getElementById("EmailTela").textContent = "Email: " + Informacoes.email;
-
-    </script>
+    <h1 id="contato_h1">Email de contato: </h1> <br>
+    <h2 id="contato_h2">guilherme.caze@a.ucb.br</h2>
     
 </body>
 </html>

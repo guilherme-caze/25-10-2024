@@ -7,7 +7,8 @@
 </head>
 <body>
     
-    <h1>Atividade 3 - Node.js</h1>
+    <h1 id="formulario1">Formulário</h1>
+    <p id="subtitulo">Complete suas informações</p>
 
     <form action="/resultado" method="post">
         <label for="NomeInput">Nome: </label>
@@ -15,14 +16,16 @@
 
         <label for="EmailInput">Email: </label> 
         <input  type="text" id="EmailInput" name="EmailInput" required> <br> <br>
-        <button type="submit" id="VerificarBotao">Enivar formulário</button> <br>
+        <button type="submit" id="VerificarBotao">Enivar formulário</button> <br> <br>
+       
 
     </form>
 
     <h2 id="NomeTela"></h2>
     <h2 id="EmailTela"></h2>
 
-    <a href="/public/contato.html">Contato</a>
+    <a href="contato.html">Contato</a>
+    <a href="sobre.html">Sobre a página</a>
 
     <link rel="stylesheet" href="css/style.css"> <!-- Coloca o nome da pasta primeiro e uma barra para puxar ela -->
     <script src="js/script.js"></script>
